@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacts Manager | CRUD Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app-container">
+
+  <!-- App Header -->
+  <header class="app-header">
+    <h1>Contacts Manager</h1>
+    
+  </header>
+
+ 
+    
+      
+
+    <div class="info-grid">
+     
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="card form-card">
+    <h2>Add / Edit Contact</h2>
+    <p class="section-desc">
+      Use the form below to add a new contact or edit an existing one.
+      All fields are required.
+    </p>
+
+    <form id="contactForm">
+      <input type="hidden" id="contactId" />
+
+      <div class="input-group">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter full name" required />
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter email address" required />
+      </div>
+
+      <div class="input-group">
+        <label>Phone</label>
+        <input type="text" id="phone" placeholder="Enter phone number" required />
+      </div>
+
+      <button type="submit" class="primary-btn">Save Contact</button>
+    </form>
+  </section>
+
+  <!-- Contact List Section -->
+  <section class="card table-card">
+    <h2>Contact List</h2>
+    <p class="section-desc">
+      View and manage all saved contacts. You can edit or delete contacts using
+      the action buttons.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="contactsTable"></tbody>
+    </table>
+  </section>
+
+  <!-- Features Section -->
+  <section class="card features-card">
+    <h2>Key Features</h2>
+    <ul class="feature-list">
+      <li>✔ Create, Read, Update, Delete (CRUD) contacts</li>
+      <li>✔ Email uniqueness validation</li>
+      <li>✔ Client and server-side validation</li>
+      <li>✔ Clean and responsive UI</li>
+      <li>✔ Persistent database storage</li>
+      <li>✔ RESTful API architecture</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+   
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
